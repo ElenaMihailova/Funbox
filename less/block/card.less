@@ -35,6 +35,8 @@
     @media (min-width: @vTabletWidth) {
         width: 100%;
     }
+
+    @media (min-width: @vDesktopWidth) {}
 }
 
 .card__wrap {
@@ -102,16 +104,17 @@
     height: 80px;
     border-radius: 50%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 10px;
     flex-direction: column;
     font-weight: 400;
     font-size: 42px;
     line-height: 22px;
     color: @colorBaseWhite;
+    margin: 0;
     padding-top: 20px;
     padding-bottom: 8px;
-    margin: 0;
     position: absolute;
     right: 9px;
     bottom: 6px;
@@ -166,11 +169,11 @@
     display: block;
 }
 
-.card--selected .card__slogan--default {
+.card--selected:hover .card__slogan--default {
     display: none;
 }
 
-.card--selected .card__slogan--txt {
+.card--selected:hover .card__slogan--txt {
     display: block;
     color: @colorDeepCerise;
 }
@@ -219,7 +222,6 @@
     cursor: auto;
 }
 
-.card--disabled .card__button{
+.card--disabled .card__button {
     cursor: auto;
 }
-
