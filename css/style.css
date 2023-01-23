@@ -99,6 +99,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    row-gap: 50px;
   }
 }
 @media (min-width: 1280px) {
@@ -173,8 +174,8 @@ body {
   padding-right: 10px;
   -webkit-clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
           clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
-  height: 97%;
-  width: 95%;
+  height: 98%;
+  width: 97%;
   max-width: 320px;
 }
 .card__wrap::before {
@@ -189,6 +190,8 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
+  border-radius: 12px;
+  pointer-events: none;
 }
 .card__button {
   margin-top: auto;
@@ -219,16 +222,17 @@ body {
   height: 80px;
   border-radius: 50%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 10px;
   flex-direction: column;
   font-weight: 400;
   font-size: 42px;
   line-height: 22px;
   color: #ffffff;
+  margin: 0;
   padding-top: 20px;
   padding-bottom: 8px;
-  margin: 0;
   position: absolute;
   right: 9px;
   bottom: 6px;
@@ -271,10 +275,10 @@ body {
 .card--selected .button__text--selected {
   display: block;
 }
-.card--selected .card__slogan--default {
+.card--selected:hover .card__slogan--default {
   display: none;
 }
-.card--selected .card__slogan--txt {
+.card--selected:hover .card__slogan--txt {
   display: block;
   color: #E52E7A;
 }
