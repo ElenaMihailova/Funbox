@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/TrebuchetMS.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/TrebuchetMS-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Exo2-Thin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Тестовое задание Funbox</title>
+</head>
+
+<body>
+  <main class="container">
+    <h1 class="visually-hidden">Доставка еды для животных Три кота</h1>
+    <section class="catalog">
+      <h2 class="catalog__name">Ты сегодня покормил кота?</h2>
+      <ul class="catalog__list">
+        <li class="catalog__item card card--first" tabindex="0">
+          <div class="card__background">
+            <div class="card__wrap">
+              <span class="card__slogan card__slogan--default">Сказочное заморское яство</span> <span
+                class="card__slogan card__slogan--txt">Котэ не одобряет?</span>
+              <h3 class="card__title">Нямушка</h3>
+              <h4 class="card__subtitle">с фуа-гра</h4>
+              <p class="card__description">10 порций <span>мышь в подарок</span></p>
+              <p class="card__value">0,5 <span>кг</span></p>
+            </div>
+          </div>
+          <button class="card__button button">
+            <span class="button__text button__text--default">Чего сидишь? Порадуй котэ, <u>купи.</u></span>
+            <span class="button__text button__text--selected">Печень утки разварная с артишоками.</span>
+            <span class="button__text button__text--disabled">Печалька, с фуа-гра закончился.</span>
+          </button>
+        </li>
+
+        <li class="catalog__item card card--selected" tabindex="0">
+          <div class="card__background">
+            <div class="card__wrap">
+              <span class="card__slogan card__slogan--default">Сказочное заморское яство</span> <span
+                class="card__slogan card__slogan--txt">Котэ не одобряет?</span>
+              <h3 class="card__title">Нямушка</h3>
+              <h4 class="card__subtitle">с рыбой</h4>
+              <p class="card__description">40 порций <span>2 мыши в подарок</span></p>
+              <p class="card__value">2 <span>кг</span></p>
+            </div>
+          </div>
+          <button class="card__button button">
+            <span class="button__text button__text--default">Чего сидишь? Порадуй котэ, <u>купи.</u></span>
+            <span class="button__text button__text--selected">Головы щучьи с чесноком да свежайшая сёмгушка.</span>
+            <span class="button__text button__text--disabled">Печалька, с рыбой закончился.</span>
+          </button>
+        </li>
+
+        <li class="catalog__item card card--disabled">
+          <div class="card__background">
+            <div class="card__wrap">
+              <span class="card__slogan card__slogan--default">Сказочное заморское яство</span> <span
+                class="card__slogan card__slogan--txt">Котэ не одобряет?</span>
+              <h3 class="card__title">Нямушка</h3>
+              <h4 class="card__subtitle">с курой</h4>
+              <p class="card__description">100 порций <span>5 мышей в подарок</span> <span>заказчик доволен</span>
+              </p>
+              <p class="card__value">5 <span>кг</span></p>
+            </div>
+          </div>
+          <button class="card__button button">
+            <span class="button__text button__text--default">Чего сидишь? Порадуй котэ, <u>купи.</u></span>
+            <span class="button__text button__text--selected">Филе из цыплят с трюфелями в бульоне.</span>
+            <span class="button__text button__text--disabled">Печалька, с курой закончился.</span>
+          </button>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <a class="footer__link" href="https://github.com/ElenaMihailova">
+      <p>Выполнено Михалова Елена</p>
+      <div class="footer__wrap">
+        <img alt="Аватарка" width="100" height="99" src="./images/1.svg">
+      </div>
+    </a>
+  </footer>
+
+  <script src="js/script.js" type="module"></script>
+</body>
+
+</html>

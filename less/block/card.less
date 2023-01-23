@@ -1,0 +1,225 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-shrink: 0;
+    flex-grow: 0;
+    align-items: center;
+    aspect-ratio: 320/509;
+    width: 320px;
+    cursor: pointer;
+
+    @media (min-width: @vTabletWidth) {
+        justify-self: center;
+    }
+
+    @media (min-width: @vDesktopWidth) {
+        min-width: 320px;
+        width: auto;
+        min-height: 509px;
+    }
+}
+
+.card__background {
+    background-color: @colorPacificBlue;
+    clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
+    border-radius: 14px;
+    width: 100%;
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    flex-shrink: 0;
+
+    @media (min-width: @vTabletWidth) {
+        width: 100%;
+    }
+
+    @media (min-width: @vDesktopWidth) {}
+}
+
+.card__wrap {
+    background-color: @colorBaseWhite;
+    border-radius: 12px;
+    padding-top: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 41px;
+    padding-right: 10px;
+    clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
+    height: 97%;
+    width: 95%;
+    max-width: 320px;
+}
+
+.card__wrap::before {
+    content: '';
+    background-image: url(../images/cat-background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left bottom -10px;
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card__button {
+    margin-top: auto;
+}
+
+.card__slogan {
+    margin: 0;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 5px;
+}
+
+.card__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: @colorBaseBlack;
+    margin: 0;
+}
+
+.card__subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: @colorBaseBlack;
+    margin: 0;
+}
+
+.card__value {
+    background-color: @colorPacificBlue;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 22px;
+    color: @colorBaseWhite;
+    padding-top: 20px;
+    padding-bottom: 8px;
+    margin: 0;
+    position: absolute;
+    right: 9px;
+    bottom: 6px;
+}
+
+
+.card__value span {
+    font-size: 22px;
+}
+
+.card__description {
+    margin: 0;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 2px;
+    flex-wrap: wrap;
+}
+
+.card__slogan--txt {
+    display: none;
+}
+
+.card--first {
+
+    @media (min-width: @vTabletWidth) {
+        grid-column: 1/-1;
+        justify-items: center;
+    }
+}
+
+.card--first .card__background {
+    @media (min-width: @vTabletWidth) {
+        width: 320px;
+    }
+}
+
+.card--selected .card__value {
+    background-color: #E52E7A;
+}
+
+.card--selected .card__background {
+    background-color: @colorDeepCerise;
+}
+
+.card--selected .button__text--default {
+    display: none;
+}
+
+.card--selected .button__text--selected {
+    display: block;
+}
+
+.card--selected .card__slogan--default {
+    display: none;
+}
+
+.card--selected .card__slogan--txt {
+    display: block;
+    color: @colorDeepCerise;
+}
+
+.card--disabled .card__value {
+    background-color: @colorPinkSwan;
+}
+
+.card--disabled .card__background {
+    background-color: @colorPinkSwan;
+}
+
+.card--disabled .card__subtitle {
+    color: @colorPinkSwan;
+}
+
+.card--disabled .card__title {
+    color: @colorPinkSwan;
+}
+
+.card--disabled .card__description {
+    color: @colorPinkSwan;
+}
+
+.card--disabled .card__slogan {
+    color: @colorPinkSwan;
+}
+
+.card--disabled .card__wrap::before {
+    opacity: 0.5;
+}
+
+.card--disabled .card__button {
+    color: @colorLaserLemon;
+}
+
+.card--disabled .button__text--default {
+    display: none;
+}
+
+.card--disabled .button__text--disabled {
+    display: block;
+}
+
+.card--disabled {
+    cursor: auto;
+}
+
+.card--disabled .card__button{
+    cursor: auto;
+}
+

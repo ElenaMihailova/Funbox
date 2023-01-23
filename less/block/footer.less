@@ -1,0 +1,34 @@
+.footer {
+    background-image: url(../images/pattern.png);
+    padding: 20px;
+}
+
+
+.footer__wrap {
+    background-color: @colorBaseWhite;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.footer__link {
+    cursor: pointer;
+    text-decoration: none;
+    color: @colorBaseWhite;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 20px;
+    max-width: 1280px;
+    transition-property: color;
+    transition-duration: 2s;
+
+    &:hover {
+        color: @colorPacificBlue;
+    }
+}

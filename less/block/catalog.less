@@ -1,0 +1,58 @@
+.catalog {
+    padding-top: 7px;
+    padding-bottom: 47px;
+    width: 100%;
+
+    @media (min-width: @vDesktopWidth) {
+        max-width: 1280px;
+        padding-left: 62px;
+        padding-right: 62px;
+    }
+}
+
+.catalog__name {
+    font-family: "Exo 2", "Arial", sans-serif;
+    font-size: 36px;
+    font-weight: 100;
+    line-height: 1.22;
+    text-align: center;
+    color: @colorBaseWhite;
+    text-shadow: 0px 1px 1px @colorBaseBlack;
+    margin: 0;
+
+    @media (min-width: @vDesktopWidth) {
+        font-size: 36px;
+        padding-top: 10px;
+    }
+}
+
+.catalog__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 22px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 50px;
+
+
+    @media (min-width: @vTabletWidth) {
+        flex-direction: row;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    @media (min-width: @vDesktopWidth) {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
